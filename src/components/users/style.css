@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.7);
+    background-color: #161b22;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 4px 12px;
+    font: 18px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+    color: #58a6ff;
+    word-break: break-all;
+    background-color: rgba(56,139,253,0.15);
+    border-radius: 6px;
+    margin: 0 5px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.usersList {
+    margin: 0;
+    padding: 15px;
+    background-color: #0d1117;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.userItem {
+    margin: 5px;
+    border: 1px solid silver;
+    margin-bottom: 0;
+    text-align: center;
+    color: #c9d1d9;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.userName {
+    color: snow;
+    text-transform: capitalize;
+}

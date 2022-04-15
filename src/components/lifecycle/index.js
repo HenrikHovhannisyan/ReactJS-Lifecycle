@@ -42,8 +42,6 @@ class Lifecycle extends React.Component {
     
   }
 
-
-
   // componentDidCatch(eror,info) {
   //   console.log(eror, info)
   // }
@@ -58,13 +56,16 @@ class Lifecycle extends React.Component {
   
     return (
       <div style={{textAlign: 'center'}}>
-      {console.log('render')}
+        {console.log('render')}
+        <div className="header">
+          <NavLink to={'basic-page'} className="nav-link" >Basic Page</NavLink>
+          <NavLink to={'users'} className="nav-link" >Git Users</NavLink>
+        </div>
         <h1>{name}</h1>
         <h2>Title</h2>
         <button onClick={() => this.fetchData('todos')}>Todos</button>
         <button onClick={() => this.fetchData('posts')}>Posts</button>
         <button onClick={() => coronaArm()}>Arm</button>
-        <NavLink to={'basic-page'} >Basic Page</NavLink>
         <hr></hr>
         {
           this.state.data && this.state.data.map((data) => {
